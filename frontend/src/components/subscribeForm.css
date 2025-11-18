@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #165CDE;
+  font-family: "Poppins", sans-serif;
+}
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.floating-logo {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  width: 70px;
+  height: auto;
+  z-index: 9999 !important;
+}
+.floating-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.subscribe-wrapper {
+  display: flex;
+  max-width: 950px;
+  margin: 80px auto;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  overflow: visible !important; 
+}
+.glass {
+  padding: 40px;
+  width: 55%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+}
+.image-side {
+  width: 45%;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subscribe-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: white;
+}
+.subscribe-sub {
+  margin-bottom: 25px;
+  font-size: 16px;
+  opacity: 0.8;
+  color: #eee;
+}
+.subscribe-input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.neon-border {
+  box-shadow: 0 0 10px #ffffff7e, 0 0 20px #ffffff55;
+}
+.subscribe-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #fff;
+}
+.glow-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #165cde;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 0 12px #165cde55;
+  transition: 0.25s;
+}
+.glow-btn:hover {
+  box-shadow: 0 0 18px #165cdeaa;
+  transform: translateY(-2px);
+}
+.cancel-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #165cde;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #165cde;
+  transition: 0.25s;
+}
+.cancel-button:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+}
+.error-message {
+  margin-top: 20px;
+  padding: 12px;
+  background: rgba(255, 80, 80, 0.95);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+.success-message {
+  margin-top: 20px;
+  padding: 12px;
+  background: #00ff8c;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.modal-confirm-image {
+  width: 700px; 
+  max-width: 90%;
+  height: auto;
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+

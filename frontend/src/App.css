@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #092456;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;     
+  align-items: center;         
+  min-height: 100vh;           
+}
+@keyframes fadeInApp {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.app-container {
+  width: 100%;
+  max-width: 960px;
+  padding: 48px;
+  background: #FFFFFF;
+  border-radius: 22px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  animation: slideUpApp 0.7s ease-out;
+  position: relative;
+}
+@keyframes slideUpApp {
+  from {
+    transform: translateY(45px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.app-title {
+  text-align: center;
+  color: #092456;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 0.7px;
+}
+.app-description {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  opacity: 0.8;
+  margin-bottom: 32px;
+  font-weight: 400;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.55;
+}
+a {
+  color: #165CDE;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+a:hover {
+  color: #092456;
+  text-shadow: 0 0 8px rgba(22, 92, 222, 0.3);
+  transform: scale(1.02);
+}
+.app-footer {
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0.75;
+  font-size: 15px;
+  color: #092456;
+  transition: 0.25s ease;
+}
+.app-footer:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.app-container::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, #ffffff66, transparent 70%);
+  border-radius: 50%;
+  filter: blur(10px);
+}
+.app-container::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, #ffffff33, transparent 70%);
+  border-radius: 50%;
+  filter: blur(12px);
+}
