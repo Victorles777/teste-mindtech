@@ -28,7 +28,7 @@ export default function SubscribeForm() {
       try {
         body = await res.json();
       } catch  {
-        ;
+        console.log('erro ao converter body')
       }
       if (res.status === 201) {
         setStatus({
