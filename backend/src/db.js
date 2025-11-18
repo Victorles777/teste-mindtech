@@ -5,10 +5,10 @@ const DB_PATH = process.env.DB_PATH || path.join(__dirname, "data", "mindtechiot
 
 const db = new sqlite3.Database(DB_PATH, (err) => {
   if (err) {
-    console.error("❌ Erro ao conectar ao SQLite:", err.message);
+    console.error("Erro ao conectar ao SQLite:", err.message);
     process.exit(1);
   }
-  console.log("✅ Conectado ao SQLite →", DB_PATH);
+  console.log("Conectado ao SQLite", DB_PATH);
 });
 
 db.run(
@@ -21,9 +21,9 @@ db.run(
 `,
   (err) => {
     if (err) {
-      console.error("❌ Erro ao criar tabela:", err.message);
+      console.error("Erro ao criar tabela:", err.message);
     } else {
-      console.log("📌 Tabela subscribers pronta.");
+      console.log("Tabela subscribers pronta.");
     }
   }
 );
